@@ -1,0 +1,9 @@
+#IsolatedPixelTrackCandidateProducer default configuration
+
+module isolPixelTrackProd = IsolatedPixelTrackCandidateProducer 
+    {
+     untracked InputTag l1eTauJetsSource     = l1extraParticles:Tau
+     untracked InputTag pixelTracksSource    = pixelTracks
+     double pixelIsolationConeSize           = 0.3
+    }
+

@@ -1,0 +1,24 @@
+# sequence for producing of isolated pixel tracks from reco
+
+################# L1 objects ################################
+
+include "L1Trigger/GlobalCaloTrigger/data/L1CaloEmuDigis.cff"
+
+include "L1Trigger/L1ExtraFromDigis/data/l1extraParticles.cfi"
+  replace l1extraParticles.produceMuonParticles=false
+
+include "L1Trigger/L1ExtraFromDigis/data/l1extraParticleMap.cfi"
+  replace l1extraParticleMap.singleTauMinEt=3.
+
+################## pixel tracks ###############################
+
+include "HLTrigger/Configuration/data/common/Vertexing.cff"
+
+################## isolated pixel tracks producer #############
+
+include "Calibration/HcalIsolatedTrackReco/data/isolPixelTrackProd.cfi"
+
+####################################################
+
+sequence isolPixelTrackProdSeq = { L1CaloEmuDigis , l1extraParticles , pixelTracks , isolPixelTrackProd }
+
