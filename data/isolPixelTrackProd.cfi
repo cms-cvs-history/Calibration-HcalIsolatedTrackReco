@@ -2,8 +2,10 @@
 
 module isolPixelTrackProd = IsolatedPixelTrackCandidateProducer 
     {
-     untracked InputTag l1eTauJetsSource     = l1extraParticles:Tau
-     untracked InputTag pixelTracksSource    = pixelTracks
-     double pixelIsolationConeSize           = 0.3
+     untracked InputTag L1eTauJetsSource     = l1extraParticles:Tau
+     untracked InputTag ParticleMapSource    = l1extraParticleMap
+     untracked InputTag PixelTracksSource    = pixelTracks
+     double PixelIsolationConeSize           = 0.3
+     double MaxEta			     = 1.3
     }
 

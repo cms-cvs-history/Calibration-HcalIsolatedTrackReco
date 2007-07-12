@@ -1,0 +1,11 @@
+      module ecalIsolPartProd=EcalIsolatedParticleCandidateProducer
+        {
+        bool UseEndcap = false
+        double EcalIsolationConeSize=0.3
+        double MinEnergy=1
+        string BarrelBasicClusterProducer="regEcalCluProd"
+        string EndcapBasicClusterProducer="regEcalCluProd"
+        string BarrelBasicClusterCollectionLabel="islandBarrelBasicClusters"
+        string EndcapBasicClusterCollectionLabel="islandEndcapBasicClusters"
+        }
+
