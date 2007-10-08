@@ -6,7 +6,6 @@ module isolPixelTrackProd = IsolatedPixelTrackCandidateProducer
      untracked InputTag L1GTSeedLabel    = l1sIsolTrack
      untracked InputTag PixelTracksSource    = pixelTracks
      double PixelIsolationConeSize           = 0.5
-     double MaxEta                           = 1.3
      double tauAssociationCone               = 0.5
      untracked InputTag  L1GtObjectMapSource = l1GtEmulDigis
     }

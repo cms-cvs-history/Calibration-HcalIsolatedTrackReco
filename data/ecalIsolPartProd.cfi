@@ -1,11 +1,12 @@
       module ecalIsolPartProd=EcalIsolatedParticleCandidateProducer
         {
-        bool UseEndcap = false
-        double EcalIsolationConeSize=0.3
-        double MinEnergy=1
-        string BarrelBasicClusterProducer="regEcalCluProd"
-        string EndcapBasicClusterProducer="regEcalCluProd"
-        string BarrelBasicClusterCollectionLabel="islandBarrelBasicClusters"
-        string EndcapBasicClusterCollectionLabel="islandEndcapBasicClusters"
+        double EcalInnerConeSize          =0.3
+        double EcalOuterConeSize          =1
+        double ECHitCountEnergyThreshold  =0.5
+        double ECHitEnergyThreshold       =0.05
+        untracked InputTag L1eTauJetsSource         =l1extraParticles:Tau
+	untracked InputTag L1GTSeedLabel            =l1sIsolTrack 
+        untracked InputTag EBrecHitCollectionLabel  =ecalRecHit:EcalRecHitsEB
+        untracked InputTag EErecHitCollectionLabel  =ecalRecHit:EcalRecHitsEE
         }
 
