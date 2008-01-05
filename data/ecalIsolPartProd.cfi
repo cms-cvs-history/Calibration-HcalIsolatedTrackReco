@@ -1,7 +1,7 @@
       module ecalIsolPartProd=EcalIsolatedParticleCandidateProducer
         {
         double EcalInnerConeSize          =0.3
-        double EcalOuterConeSize          =1
+        double EcalOuterConeSize          =0.7
         double ECHitCountEnergyThreshold  =0.5
         double ECHitEnergyThreshold       =0.05
         untracked InputTag L1eTauJetsSource         =l1extraParticles:Tau
