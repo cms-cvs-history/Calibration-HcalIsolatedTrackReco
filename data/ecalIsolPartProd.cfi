@@ -4,9 +4,9 @@
         double EcalOuterConeSize          =0.7
         double ECHitCountEnergyThreshold  =0.5
         double ECHitEnergyThreshold       =0.05
-        untracked InputTag L1eTauJetsSource         =l1extraParticles:Tau
-	untracked InputTag L1GTSeedLabel            =l1sIsolTrack 
-        untracked InputTag EBrecHitCollectionLabel  =ecalRecHit:EcalRecHitsEB
-        untracked InputTag EErecHitCollectionLabel  =ecalRecHit:EcalRecHitsEE
+        InputTag L1eTauJetsSource         =l1extraParticles:Tau
+	InputTag L1GTSeedLabel            =l1sIsolTrack 
+        InputTag EBrecHitCollectionLabel  =ecalRecHit:EcalRecHitsEB
+        InputTag EErecHitCollectionLabel  =ecalRecHit:EcalRecHitsEE
         }
 
