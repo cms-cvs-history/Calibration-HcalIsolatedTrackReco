@@ -9,5 +9,5 @@ module isolPixelTrackProd = IsolatedPixelTrackCandidateProducer
      double tauAssociationCone               = 0.5
      double tauUnbiasCone                    = 0
      InputTag  ecalFilterLabel     = aaa
-     InputTag  L1GtObjectMapSource = gtDigis
+     InputTag  L1GtObjectMapSource = l1GtEmulDigis
     }
