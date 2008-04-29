@@ -1,0 +1,10 @@
+module iptCorrector = IPTCorrector
+{
+	untracked double corrIsolRadius=0.3
+	untracked double corrIsolMaxPt=0.9
+
+        InputTag corTracksLabel=generalTracks
+        InputTag filterLabel=hltIsolPixelTrackFilter
+}
+
+

@@ -1,0 +1,23 @@
+
+module HITSiStripRoI = HITSiStripRawToClustersRoI 
+{
+    # layers of interest
+    untracked int32 layers = 10
+
+    # define objects of interest
+    untracked bool global = false
+    untracked bool random = false
+    untracked bool useTauJets = false
+    untracked bool usePixelTracks = true
+
+    # define tracker windows
+    untracked double tjetEtaWindow = 0.05 
+    untracked double tjetPhiWindow = 0.05
+    untracked double ptrackEtaWindow=0.3
+    untracked double ptrackPhiWindow=0.3
+
+    # define input tags
+    InputTag siStripLazyGetter = siStripRawToClustersFacilityHIT
+    InputTag l1tauJetLabel = l1extraParticles:Tau
+    InputTag pixelTrackLabel = isolPixelTrackFilterL2
+}

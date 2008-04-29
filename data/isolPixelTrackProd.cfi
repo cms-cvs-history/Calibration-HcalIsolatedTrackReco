@@ -5,9 +5,9 @@ module isolPixelTrackProd = IsolatedPixelTrackCandidateProducer
      InputTag L1eTauJetsSource     = l1extraParticles:Tau
      InputTag L1GTSeedLabel    = l1sIsolTrack
      InputTag PixelTracksSource    = pixelTracks
-     double PixelIsolationConeSize           = 0.2
-     double tauAssociationCone               = 0.5
-     double tauUnbiasCone                    = 0
      InputTag  ecalFilterLabel     = aaa
-     InputTag  L1GtObjectMapSource = gtDigis
+
+     untracked double PixelIsolationConeSize           = 0.5
+     untracked double tauAssociationCone               = 0.5
+     untracked double tauUnbiasCone                    = 1.2
     }
