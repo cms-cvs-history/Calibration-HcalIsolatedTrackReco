@@ -2,12 +2,14 @@
 
 module isolPixelTrackProd = IsolatedPixelTrackCandidateProducer 
     {
-     InputTag L1eTauJetsSource     = l1extraParticles:Tau
-     InputTag L1GTSeedLabel    = l1sIsolTrack
-     InputTag PixelTracksSource    = pixelTracks
-     InputTag  ecalFilterLabel     = aaa
-
-     untracked double PixelIsolationConeSize           = 0.5
-     untracked double tauAssociationCone               = 0.5
-     untracked double tauUnbiasCone                    = 1.2
+    InputTag L1eTauJetsSource = l1extraParticles:Tau
+    InputTag PixelTracksSource = pixelTracks
+    InputTag VertexLabel = pixelVertices
+    InputTag L1GTSeedLabel = hltL1sIsolTrack
+    double tauUnbiasCone = 1.2
+    double tauAssociationCone = 0.5
+    double PixelIsolationConeSizeHB = 0.4
+    double PixelIsolationConeSizeHE = 0.5
+    double MaxVtxDXYSeed = 0.04
+    double MaxVtxDXYIsol = 10
     }
