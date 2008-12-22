@@ -1,7 +1,0 @@
-module stripFED = SiStripRegFEDSelector
-{
-double delta		=1
-
-InputTag rawInputLabel	=rawDataCollector
-InputTag regSeedLabel	=hltIsolPixelTrackFilter
-}

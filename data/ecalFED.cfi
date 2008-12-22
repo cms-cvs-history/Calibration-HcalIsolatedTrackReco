@@ -1,7 +1,0 @@
-module ecalFED = ECALRegFEDSelector
-{
-double delta		=1
-
-InputTag rawInputLabel	=rawDataCollector
-InputTag regSeedLabel	=hltPixelIsolTrackFilter
-}
